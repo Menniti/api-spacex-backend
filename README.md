@@ -6,11 +6,11 @@ The credentials is setup already into docker-compose
 
 Container 1 - That provides a API that allow to send a query into API as a parameter query 
 
+The system do a query directly from Amazon Athena Serverless Warehouse, using a single API rest
+
 With postman -> `http://localhost:5000/athena_api?query=select * from starlink_test limit 10` 
 
 Container 2 - Start ETL read the json file and upload it into S3 bucket
-
-The system do a query directly into Amazon Athena Serverless Warehouse, using a single API rest
 
 Benefits
 - No need to manage. 
