@@ -16,7 +16,7 @@ Benefits
 - No need to manage. 
 - The solution provides big scale, something that postgres/mysql are not designed to handle
 - Glue Metastore, is the Hive metastore managed services from Amazon (Free) 
-- Data saved directly on S3 bucket, so the costs of amount of data stored are very cheap.
+- Data saved directly on S3 bucket, so the costs of amount of data stored are very cheap comparing with SSD.
 - The ETLs, can be started directly from a image docker, allowing us to grow the ETLs and Schedule it with K8s
 
 # Question 2-4
