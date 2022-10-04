@@ -2,6 +2,7 @@
 
 # Question 1
 I`ve setup a docker-compose that has 1 image, that starts 2 container
+The credentials is setup already into docker-compose
 
 Container 1 - That provides a API that allow to send a query into API as a parameter query 
 
@@ -9,8 +10,14 @@ With postman -> `http://localhost:5000/athena_api?query=select * from starlink_t
 
 Container 2 - Start ETL read the json file and upload it into S3 bucket
 
-The system do a query directly into Amazon Athena Serverless Warehouse, no need to manage or setup.
-The credentials is setup already into docker-compose
+The system do a query directly into Amazon Athena Serverless Warehouse, using a single API rest
+
+Benefits
+- No need to manage. 
+- The solution provides big scale, something that postgres/mysql are not designed to handle
+- Glue Metastore, is the Hive metastore managed services from Amazon (Free) 
+- Data saved directly on S3 bucket, so the costs of amount of data stored are very cheap.
+- The ETLs, can be started directly from a image docker, allowing us to grow the ETLs and Schedule it with K8s
 
 # Question 2-4
 
