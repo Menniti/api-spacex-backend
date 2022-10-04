@@ -47,8 +47,9 @@ def start():
     string_json = ""
     for item in data:
         string_json = string_json + str(json.dumps(item))+"\n"
-    path = "./output/" + "historical.json"
+    name_file = "historical.json"
+    path = "./output/" + name_file 
     _save_local(path, string_json)
-    _save_to_bucket(path,"historical.json")
+    _save_to_bucket(path, name_file)
 
 start()
