@@ -1,3 +1,27 @@
+# Luiz Menniti - Resolution Tests
+
+# Question 1
+I`ve setup a docker-compose that has 1 image, that starts 2 container
+
+Container 1 - That provides a API that allow to send a query into API as a parameter query 
+
+With postman -> `http://localhost:5000/athena_api?query=select * from starlink_test limit 10` 
+
+Container 2 - Start ETL read the json file and upload it into S3 bucket
+
+The system do a query directly into Amazon Athena Serverless Warehouse, no need to manage or setup.
+The credentials is setup already into docker-compose
+
+# Question 2-4
+
+The answers for all sqls, is inside of ./sql path
+
+# Run the system
+
+docker-compose up --build
+
+Thanks 
+
 # Blue Onion Labs Take Home Test
 
 Hey! We are stoked that you are interested in joining the team at Blue Onion Labs.
