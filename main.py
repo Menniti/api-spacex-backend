@@ -20,8 +20,8 @@ def athena_api():
     try:
         df = wr.athena.read_sql_query(query, database='starlinkdb')
     except Exception as error:
-        utils.logging("ERROR",("Error to select presto_api - {0}").format(error))
-        return json.dumps(utils.get_response("FAIL", "ERROR: Not possible to execute presto"))
+        utils.logging("ERROR",("Error to select athena - {0}").format(error))
+        return json.dumps(utils.get_response("FAIL", "ERROR: Not possible to execute athena"))
     result_dicts = df.to_dict('records')
     return utils.get_response("OK", str(result_dicts))
 
