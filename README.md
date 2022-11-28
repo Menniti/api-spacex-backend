@@ -1,4 +1,4 @@
-# Luiz Menniti - Resolution Tests
+# Luiz Menniti - Case Study
 
 # Question 1
 I`ve setup a docker-compose that has 1 image, that starts 2 container
@@ -29,11 +29,11 @@ docker-compose up --build
 
 Thanks 
 
-# Blue Onion Labs Take Home Test
+# Home Test
 
-Hey! We are stoked that you are interested in joining the team at Blue Onion Labs.
+Hey! We are stoked that you are interested in joining the team.
 
-We have crafted the following test to see how you approach pulling and manipulating of data. We want to get a general idea of how you approach some common types of problems that we encounter here at Blue Onion (we are really proficient at integrations!)
+We have crafted the following test to see how you approach pulling and manipulating of data. We want to get a general idea of how you approach some common types of problems that we encounter here
 
 ## Background
 [spacexdata.com](https://docs.spacexdata.com/) provides an API to query attributes about SpaceX launches (https://github.com/r-spacex/SpaceX-API/tree/master/docs#rspacex-api-docs). For this exercise we are going to be working with one resource in particular:

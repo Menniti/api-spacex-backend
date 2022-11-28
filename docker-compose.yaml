@@ -8,8 +8,8 @@ services:
     entrypoint: python main.py
     environment:
       AWS_DEFAULT_REGION: us-west-2
-      AWS_ACCESS_KEY_ID: AKIAW5QTHOXE6AZFNX7N
-      AWS_SECRET_ACCESS_KEY: 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
+      AWS_ACCESS_KEY_ID: 
+      AWS_SECRET_ACCESS_KEY: 
     build: 
       context: .
       dockerfile: Dockerfile
@@ -24,8 +24,8 @@ services:
     entrypoint: python etls/etl.py
     environment:
       AWS_DEFAULT_REGION: us-west-2
-      AWS_ACCESS_KEY_ID: AKIAW5QTHOXE6AZFNX7N
-      AWS_SECRET_ACCESS_KEY: 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
+      AWS_ACCESS_KEY_ID: 
+      AWS_SECRET_ACCESS_KEY: 
     build: 
       context: .
       dockerfile: Dockerfile
